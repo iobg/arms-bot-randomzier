@@ -1,11 +1,13 @@
 var Discord = require('discord.js');
 var logger = require('winston');
 var auth = require('./auth.json');
+var arms = require('./arms.json')
 // Configure logger settings
 logger.remove(logger.transports.Console);
 logger.add(logger.transports.Console, {
     colorize: true
 });
+
 logger.level = 'debug';
 // Initialize Discord Bot
 
@@ -14,7 +16,6 @@ var bot = new Discord.Client();
 bot.on('ready', function (evt) {
     logger.info('Connected');
     logger.info('Logged in as: ');
-    logger.info(bot.username + ' - (' + bot.id + ')');
 });
 bot.on('message', function (message) {
     // Our bot needs to know if it will execute a command
@@ -30,6 +31,14 @@ bot.on('message', function (message) {
             case 'ping':
                 message.channel.send('pong');
             break;
+            case 'random':
+            var randomArms ="";
+            for (var i=0; i<3; i++){
+                if(i!=0)randomArms += ", ";
+                randomArms += arms.list[Math.round(Math.random() * arms.list.length)];
+            }
+                console.log(randomArms);
+                message.channel.send(randomArms);
             // Just add any case commands if you want to..
          }
      }

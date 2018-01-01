@@ -4,6 +4,7 @@
   "description": "test discord bot",
   "main": "bot.js",
   "author": "iobg",
+  "start": "bot.js",
   "dependencies": {
     "discord.io": "^2.5.3",
     "discord.js": "^11.2.1",
