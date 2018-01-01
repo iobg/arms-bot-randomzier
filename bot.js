@@ -35,7 +35,7 @@ bot.on('message', function (message) {
             var randomArms ="";
             for (var i=0; i<3; i++){
                 if(i!=0)randomArms += ", ";
-                randomArms += arms.list[Math.round(Math.random() * arms.list.length)];
+                randomArms += arms.list[Math.round(Math.random() * arms.list.length-1)];
             }
                 console.log(randomArms);
                 message.channel.send(randomArms);
