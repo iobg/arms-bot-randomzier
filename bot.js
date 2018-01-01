@@ -34,14 +34,18 @@ bot.on('message', function (message) {
             case 'armstest':
             var randomArms ="";
             for (var i=0; i<3; i++){
+                var randomNum = Math.round(Math.random() * arms.list.length-1)
+                console.log(randomNum)
                 if(i!=0)randomArms += ", ";
-                randomArms += arms.list[Math.round(Math.random() * arms.list.length-1)];
+                randomArms += arms.list[randomNum];
             }
                 console.log(randomArms);
                 message.channel.send(randomArms);
                 break;
             case 'character':
-            message.channel.send(arms.characters[Math.round(Math.random() * arms.characters.length-1)]);
+            var randomChar = Math.round(Math.random() * arms.characters.length-1)
+            console.log(randomChar);
+            message.channel.send(arms.characters[randomChar]);
             break;
          }
      }
