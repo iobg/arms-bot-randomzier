@@ -39,7 +39,10 @@ bot.on('message', function (message) {
             }
                 console.log(randomArms);
                 message.channel.send(randomArms);
-            // Just add any case commands if you want to..
+                break;
+            case 'character':
+            message.channel.send(arms.characters[Math.round(Math.random() * arms.characters.length-1)]);
+            break;
          }
      }
 });

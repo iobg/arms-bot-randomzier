@@ -5,5 +5,9 @@
 		"Phoenix", "Popper", "Ramram", "Retorcher", "Revolver", "Roaster", "Scorpio", "Seekie",
 		"Skully", "Slamamander", "Slapamander", "Sparky", "Thunderbird", "Toaster", "Tribolt",
 		"Triblast", "Whammer"
-	]
+	],
+	"characters":
+	["Spring Man", "Ribbon Girl", "Ninjara", "Min Min", "Helix", "Master Mummy", 
+		"Mechanica", "Twintelle", "Byte & Barq",
+	 "Kid Cobra", "Max Brass", "Lola Pop", "Misango", "Springtron", "Dr. Coyle"]
 }
