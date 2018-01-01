@@ -31,7 +31,7 @@ bot.on('message', function (message) {
             case 'ping':
                 message.channel.send('pong');
             break;
-            case 'random':
+            case 'armstest':
             var randomArms ="";
             for (var i=0; i<3; i++){
                 if(i!=0)randomArms += ", ";
