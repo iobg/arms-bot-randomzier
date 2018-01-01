@@ -47,6 +47,9 @@ bot.on('message', function (message) {
             console.log(randomChar);
             message.channel.send(arms.characters[randomChar]);
             break;
+            case 'stage':
+            message.channel.send("Snake Park");
+            break;
          }
      }
 });
