@@ -36,6 +36,7 @@ bot.on('message', function (message) {
             for (var i=0; i<3; i++){
                 var randomNum = Math.round(Math.random() * arms.list.length-1)
                 console.log(randomNum)
+                if (randomNum == -1) randomNum=1;
                 if(i!=0)randomArms += ", ";
                 randomArms += arms.list[randomNum];
             }
@@ -44,6 +45,7 @@ bot.on('message', function (message) {
                 break;
             case 'character':
             var randomChar = Math.round(Math.random() * arms.characters.length-1)
+            if(randomChar==-1)randomChar=0;
             console.log(randomChar);
             message.channel.send(arms.characters[randomChar]);
             break;
@@ -54,4 +56,3 @@ bot.on('message', function (message) {
      }
 });
 bot.login(auth.token);
-
