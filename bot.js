@@ -52,6 +52,11 @@ bot.on('message', function (message) {
             case 'stage':
             message.channel.send("Snake Park");
             break;
+            case 'salt':
+            message.channel.send("some text", {
+            file: "https://s-i.huffpost.com/gen/1362742/images/o-SALT-SHAKERS-SPILLED-facebook.jpg" // Or replace with FileOptions object
+            break;
+});
          }
      }
 });
