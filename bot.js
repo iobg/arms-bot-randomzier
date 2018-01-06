@@ -54,7 +54,7 @@ bot.on('message', function (message) {
             break;
             case 'salt':
             message.channel.send("some text", {
-            file: "https://s-i.huffpost.com/gen/1362742/images/o-SALT-SHAKERS-SPILLED-facebook.jpg" // Or replace with FileOptions object
+            file: "https://s-i.huffpost.com/gen/1362742/images/o-SALT-SHAKERS-SPILLED-facebook.jpg"}) // Or replace with FileOptions object
             break;
 });
          }
