@@ -56,7 +56,6 @@ bot.on('message', function (message) {
             message.channel.send("some text", {
             file: "https://s-i.huffpost.com/gen/1362742/images/o-SALT-SHAKERS-SPILLED-facebook.jpg"}) // Or replace with FileOptions object
             break;
-});
          }
      }
 });
