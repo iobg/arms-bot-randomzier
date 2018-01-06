@@ -53,7 +53,7 @@ bot.on('message', function (message) {
             message.channel.send("Snake Park");
             break;
             case 'salt':
-            message.channel.send("some text", {
+            message.channel.send("oh no", {
             file: "https://s-i.huffpost.com/gen/1362742/images/o-SALT-SHAKERS-SPILLED-facebook.jpg"}) // Or replace with FileOptions object
             break;
          }
